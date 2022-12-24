@@ -15,6 +15,7 @@ function validate_from() {
         if(docs[i].value === '')
             docs_howers[i].style.display = 'block';
         else
+            docs_howers[i].style.display = 'none';
             dict_doc[i] = docs[i].value;
     }
     telegramAPI.MainButton.setText('Отправить');
