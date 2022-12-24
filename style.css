@@ -1,0 +1,43 @@
+label{
+    display: block;
+}
+.text-color-white{
+    color: #fff;
+}
+.mr-1{
+    margin-top: 1rem;
+}
+.mr-top-bot{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.btn-green{
+    background-color: #198754;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.btn-green:hover{
+    background-color: #198756;
+    color: #fff;
+    border-radius: 5px;
+    border-color: transparent;
+}
+.date{
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.warning-text{
+    display: none;
+    font-size: 12px;
+    color: #dc3545;
+}
+
+[id^=documents]{
+    display: block;
+}
+[id^=documents-error]{
+    display: none;
+}
