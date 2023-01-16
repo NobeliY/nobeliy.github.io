@@ -12,7 +12,8 @@ label{
     margin-bottom: 1rem;
 }
 .btn-green{
-    background-color: #198754;
+    /*background-color: #198754;*/
+    background-color: #0099ff;
     color: #fff;
     font-size: 16px;
     border-radius: 5px;
@@ -25,10 +26,7 @@ label{
     border-radius: 5px;
     border-color: transparent;
 }
-.date{
-    border: 1px solid black;
-    border-radius: 2px;
-}
+
 .warning-text{
     display: none;
     font-size: 12px;

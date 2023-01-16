@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="src/style/bootstrap.css">
+        <link rel="stylesheet" href="src/style/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Подача заявки.</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="p-5 mb-4 bg-primary rounded-3 mr-1">
+                <div class="container-fluid py-4">
+                    <h1 class="display-5 fw-bold text-color-white">Форма отправки заявки на доступ к парковке</h1>
+                    <h1 class="display-5 fw-bold text-color-white">1.0</h1>
+                    <p class="col-md-8 text-color-white">Необходимо заполнить все ячейки формы!</p>
+                </div>
+            </div>
+            <div class="p-5 mb-4 bg-light rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">Форма для заполения</h1>
+                    <p class="col-md-8">Здесь вам необходимо требуемую от вас информацию.</p>
+                    <form onsubmit="return validate_from();">
+                        <div class="mr-top-bot">
+                            <label for="application-1">1. Фамилия, имя, отчество.</label>
+                            <input type="text" class="col-12 documents" id="application-1"
+                                                                      pattern="[А-Яа-я]+$">
+                            <span class="warning-text documents-error" id="application-1-e">
+                                Внимание! Вы не заполнили данное поле!
+                            </span>
+                        </div>
+                        <div class="mr-top-bot">
+                            <label for="application-2">
+                                2. Почта.
+                            </label>
+                            <input type="text" class="col-12 documents" id="application-2"
+                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="example@example.ru">
+                            <span class="warning-text documents-error" id="application-2-e">
+                                Внимание! Вы не заполнили данное поле!
+                            </span>
+                        </div>
+                        <div class="mr-top-bot">
+                            <label for="application-3">
+                                3. Академическая группа.
+                            </label>
+                            <input type="text" class="col-12 documents" id="application-3" pattern="24+[0-9]{3}" placeholder="24***">
+                            <span class="warning-text documents-error" id="application-3-e">
+                                Внимание! Вы не заполнили данное поле!
+                            </span>
+                        </div>
+                        <div class="mr-top-bot">
+                            <label for="application-4">
+                                4. Номер телефона.
+                            </label>
+                            <input type="text" class="col-12 documents" id="application-4" pattern="[0-9]{11}" placeholder="89172345678">
+                            <span class="warning-text documents-error" id="application-4-e">
+                                Внимание! Вы не заполнили данное поле!
+                            </span>
+                        </div>
+                        <div class="mr-top-bot">
+                            <label for="application-5">
+                                5. Государственный номер автомобиля.
+                            </label>
+                            <input type="text" class="col-12 documents" id="application-5" placeholder="A000AA|16">
+                            <span class="warning-text documents-error" id="application-5-e">
+                                Внимание! Вы не заполнили данное поле!
+                            </span>
+                        </div>
+                        <div class="mr-top-bot">
+                            <button class="col-12 btn-green" type="submit">
+                                Проверить данные
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
