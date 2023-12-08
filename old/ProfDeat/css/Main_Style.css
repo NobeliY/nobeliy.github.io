@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url(../fonts/Ustroke.otf);
+*{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav{
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 13px;
+  border-color: #e7e7e7;
+  margin: 0;
+  min-width: 768px;
+  height: 72px;
+  overflow-x: visible;
+  overflow-y: visible;
+}
+nav ul.nav_links li a{
+  color: #fff;
+  margin-right: 2px;
+}
+.contact{
+float: right;
+margin-right: 0px;
+margin-top: 10px;
+}
+nav a.contact button{
+  color: #fff;
+}
+nav a.contact button:hover{
+  color: #ED6F28;
+}
+.nav_links{
+  margin-left: 10%;
+  margin-top: 13px;
+  margin-right: 10%;
+  padding-left: 0px;
+  list-style: none;
+  float: left;
+  width: 50%;
+  height: auto;
+  text-align: justify;
+}
+.nav_links li {
+  display: inline-block;
+  padding-right: 5%;
+}
+nav ul.nav_links  li a:hover{
+  color: #ED6F28;
+}
+#active{
+  color: #ED6F28;
+}
+
+li,a,button{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+  background: none !important;
+  text-decoration: none;
+}
+
+/* body */
+body{
+  background-color: #fff;
+}
+
+/* Header */
+header{
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #000;
+}
+
+/ logo
+.logo{
+  width: 100;
+  padding-left: 10px;
+}
+button{
+  padding: 3px 25px;
+
+}
+
+/* div */
+div.container{
+  display: block;
+  background-image: url(../images/banner22.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height:750px;
+  width: 100%;
+  position: relative;
+}
+div.cont {
+  font-family: "Roboto", cursive;
+  color: #fff;
+  text-align: center;
+  margin-top: 5%;
+  text-transform: uppercase;
+}
+div.cont h2{
+  font-size: 3em;
+}
+div.cont h3{
+  font-size: 2em;
+  color: #FFD700;
+  margin-top: 3%;
+}
+div.banner_bottom{
+  text-align: center;
+  font-family: "Roboto", cursive;
+  text-transform: uppercase;
+  padding: 3em 0;
+}
+div.three_banner_bottom h3{
+  font-family: "Ustroke", cursive;
+  font-size: 2em;
+}
+div.three_banner_bottom h3 span{
+  color: #f5af02;
+  font-size: 1.2em !important;
+}
+div.banner_bottom p.sub_para{
+  letter-spacing: 10px;
+  color: #0064d2;
+  font-size: 0.9em;
+}
+/* Carousel */
+.inner_w3l_agile_grids {
+    margin-top: 4em;
+}
+.about{
+  background: url("../images/ab.jpg") no-repeat 0px 0px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+div.about div.about_container{
+
+}
+div.about div.about_container h3{
+  padding-top: 2em;
+  font-family: "Ustroke", cursive;
+  color: #FFF;
+  font-size: 2em;
+  text-align: center;
+}
+div.about div.about_container h3 span{
+  color: #f5af02;
+  font-size: 1.2em !important;
+}
+div.about div.about_container p.sub_para_1{
+  letter-spacing: 10px;
+  color: #fff;
+  font-size: 0.9em;
+  text-align: center;
+}
+p.upper_main{
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: #FFF;
+}
+p.lower_main, p.lower_main span{
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+p.reklama{
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+p.reklama a{
+  text-decoration: none;
+}
+p.reklama a:hover{
+  color: #ED6F28;
+}
+div.services{
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  background: none;
+}
+div.services div.service_container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-left: auto;
+  width: 90%;
+  font-family: "Ustroke", cursive;
+  font-size: 24px;
+  color: #000;
+}
+div.service_container h3{
+  font-size: 2em !important;
+}
+div.service_container h3 span{
+  color: #f5af02;
+  font-size: 1.2em !important;
+}
+div.service_container p.sub_para_2{
+  letter-spacing: 10px;
+  color: #0064d2;
+  font-size: 0.9em;
+  text-align: center;
+}
+div.3dauto{
+  margin-top: 2em;
+}
+
+/* Contact window */
+
+#contact{
+  background: #000;
+  text-align: center;
+  font-family: 'Ustroke', sans-serif;
+  font-size: 3em;
+}
+/* Secret */
+div.noname{
+  background: #fff;
+  width: 100%;
+  height: 4em;
+  color: #fff;
+}
+div.noname p.secret a.secure{
+  text-decoration: none;
+  color: #fff;
+}
+/* Footer */
+footer{
+  background: #000;
+
+}
