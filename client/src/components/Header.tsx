@@ -1,18 +1,29 @@
-import {Component} from 'react';
-import {ReactSVG} from "react-svg";
+import { Component, JSX } from 'react';
+import { ReactSVG } from "react-svg";
+
 import Logo from '../assets/logo.svg';
-import Logo_name from '../assets/logo_name.svg';
+import './scss/header.scss';
+
 export class Header extends Component {
-    logo = <>
+    logo: JSX.Element = <a id={"logo"} href={"/"}>
         <ReactSVG src={Logo}/>
-        <ReactSVG src={Logo_name}/>
-    </>
-    render() {
+    </a>
+
+    navigation: JSX.Element = <nav>
+        <ul className="nav_links">
+            <li><a className="scroll" href="#active">Главная</a></li>
+            <li><a className="scroll" href="#about">О нас</a></li>
+            <li><a className="scroll" href="#service">Выбор автомобиля</a></li>
+        </ul>
+        <a href="#contact" className="scroll contact"><button type="button">Связаться с нами</button></a>
+    </nav>
+    render(): JSX.Element {
         return (
-            <div className={'header'}>
+            <header>
                 {this.logo}
-                qq
-            </div>
+                {this.navigation}
+                {/*<h1>Zet-PRJ Company</h1>*/}
+            </header>
         );
     }
 }
