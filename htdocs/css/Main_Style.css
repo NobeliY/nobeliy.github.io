@@ -80,9 +80,9 @@ header{
   background-color: #000;
 }
 
-/ logo
+
 .logo{
-  width: 100;
+  width: 100%;
   padding-left: 10px;
 }
 button{
@@ -216,7 +216,7 @@ div.service_container p.sub_para_2{
   font-size: 0.9em;
   text-align: center;
 }
-div.3dauto{
+div.ModelAuto{
   margin-top: 2em;
 }
 
