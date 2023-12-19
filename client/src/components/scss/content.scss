@@ -1,0 +1,24 @@
+@import "../../static/colors";
+div.container{
+  display: block;
+  background-image: url(../../assets/images/banner22.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height:750px;
+  width: 100%;
+  position: relative;
+}
+div .main {
+  font-family: "Roboto", cursive;
+  color: $white;
+  text-align: center;
+  margin-top: 5%;
+  text-transform: uppercase;
+}
+div .main h1 {
+  font-size: 26px;
+}
+div .main h2 {
+  font-size: 16px;
+}

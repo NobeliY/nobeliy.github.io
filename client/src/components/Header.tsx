@@ -15,7 +15,7 @@ export class Header extends Component {
             <li><a className="scroll" href="#about">О нас</a></li>
             <li><a className="scroll" href="#service">Выбор автомобиля</a></li>
         </ul>
-        <a href="#contact" className="scroll contact"><button type="button">Связаться с нами</button></a>
+        <a href="#contact" className="scroll contact"><button type="button"><span>Связаться с нами</span></button></a>
     </nav>
     render(): JSX.Element {
         return (

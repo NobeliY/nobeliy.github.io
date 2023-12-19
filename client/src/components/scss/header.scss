@@ -1,4 +1,4 @@
-@import "../../static/colors.scss";
+@import "../../static/colors";
 .nav {
   padding: 13px 15px 0;
   border-color: $miniWhite;
@@ -42,6 +42,7 @@ nav ul.nav_links li a{
   float: right;
   margin-right: 0px;
   margin-top: 10px;
+  navbutton_background_color: $black;
 }
 nav a.contact button{
   color: $white;
